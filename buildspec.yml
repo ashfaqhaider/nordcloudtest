@@ -11,9 +11,11 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn clean install package
+      - mv target/nordcloudtest-0.0.1-SNAPSHOT.war nordcloudtest-0.0.1-SNAPSHOT.war
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - target/nordcloudtest-0.0.1-SNAPSHOT.war
+    - nordcloudtest-0.0.1-SNAPSHOT.war
+    - .ebextensions/**/*
