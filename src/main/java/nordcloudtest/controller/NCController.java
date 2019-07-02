@@ -9,7 +9,7 @@ public class NCController {
 	
 	@RequestMapping("/")
 	public String home() {
-		return "index";
+		return "index is ok";
 	}
 	
 
