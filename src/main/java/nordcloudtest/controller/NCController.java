@@ -34,7 +34,7 @@ public class NCController {
 				else
 					string = "No link station within reach for point"+device;
 			}
-			response +=string+"\n";
+			response +=string+"<br>";
 		}
 		return response;
 	}
